@@ -46,7 +46,7 @@
         </form>
         @endif
 
-        <a href="{{ route('orders.complete', $order->id) }}" class="btn btn-warning">Редактировать</a>
+        <a href="{{ route('orders.edit', $order->id) }}" class="btn btn-warning">Редактировать</a>
 
         <form method="POST" action="{{ route('orders.destroy', $order->id) }}">
             @csrf
